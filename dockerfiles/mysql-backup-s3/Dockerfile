@@ -19,5 +19,7 @@ ENV MULTI_FILES no
 ENV SCHEDULE **None**
 ADD run.sh run.sh
 ADD backup.sh backup.sh
+RUN chmod +x backup.sh
+RUN chmod +x run.sh
 CMD ["sh", "run.sh"]
 

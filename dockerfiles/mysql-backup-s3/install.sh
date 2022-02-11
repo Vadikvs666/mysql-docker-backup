@@ -10,9 +10,10 @@ apk update
 apk add mysql-client
 
 # install s3 tools
-apk add python py-pip
+apk add  python3   py-pip
+pip install six
 pip install awscli
-apk del py-pip
+
 
 # install go-cron
 apk add curl
